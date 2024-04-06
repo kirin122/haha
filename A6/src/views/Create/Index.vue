@@ -1,5 +1,6 @@
 <template>
   <main>
+    <h1>新增文章</h1>
     <el-form
       ref="form"
       :model="form"
@@ -75,7 +76,6 @@ export default {
     }
   },
   created() {
-    console.log(process.env.NODE_ENV)
   },
   methods: {
     ...mapActions({
@@ -88,16 +88,11 @@ export default {
           this.form['createTime'] = this.getCurrentDateTime()
           this.form['updateTime'] = this.form.createTime
           this.createArticle(this.form)
-          console.log(this.form)
           this.$message({
             type: 'success',
             message: '新增成功'
           })
-        } else {
-          this.$message({
-            type: 'error',
-            message: '請填入正確內容'
-          })
+          this.$router.push('/blog')
         }
       })
     }

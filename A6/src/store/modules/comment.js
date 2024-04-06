@@ -56,21 +56,3 @@ export default {
   mutations,
   actions
 }
-
-// // 创建一个空的外层 Map
-// const nestedMap = new Map();
-
-// // 在外层 Map 中设置键值对
-// nestedMap.set('outerKey1', new Map([
-//   ['innerKey1', 'value1'],
-//   ['innerKey2', 'value2']
-// ]));
-
-// nestedMap.set('outerKey2', new Map([
-//   ['innerKey3', 'value3'],
-//   ['innerKey4', 'value4']
-// ]));
-
-// // 获取巢状对象的值
-// console.log(nestedMap.get('outerKey1').get('innerKey1')); // 输出 'value1'
-// console.log(nestedMap.get('outerKey2').get('innerKey3'));

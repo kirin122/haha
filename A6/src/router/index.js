@@ -18,7 +18,8 @@ export const routes = [
         meta: {
           title: `Blog`
         }
-      }, {
+      },
+      {
         path: 'create',
         name: 'Create',
         component: () => import('@/views/Create/Index.vue'),
@@ -35,10 +36,9 @@ export const routes = [
         }
       },
       {
-        path: 'update',
+        path: 'update/:id',
         name: 'Update',
-        component: () => import('@/views/Update/Index.vue'),
-        props: route => ({ query: route.query.id }),
+        component: () => import('@/views/Update/_id.vue'),
         meta: {
           title: `Blog - Update`
         }
