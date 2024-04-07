@@ -41,7 +41,6 @@
         >Submit</el-button>
       </el-form-item>
     </el-form>
-
   </main>
 </template>
 
